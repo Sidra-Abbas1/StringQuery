@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML Form With Js</title>
+    <link rel="stylesheet" href="style.css">
+      
+      <script>           
+        function validateForm() 
+        {
+         var name = document.getElementById("name").value;
+         var email = document.getElementById("email").value;
+         var dob = document.getElementById("dob").value;
+         var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|
+         (([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+         if (name == "") {
+          return false;
+         } 
+          else if (/\W/.test(name) === true) 
+         {
+          return false;
+         }
+            else if (/\d/.test(name) === true) 
+            {
+          return false;
+         } 
+            else if (email == "") 
+                {
+          return false;
+         } 
+            else if (filter.test(email) === false) 
+               {
+          return false;
+         }
+       }
+          
+      function myFunction() {
+          window.open("result.html");
+        }
+          
+    </script>
+  </head>
+  <body>
+	
+      
+      <form>
+          
+       <label class="Labels" onblur="validateName()">Name</label>
+       <br>
+       <input name="name" type="text">
+       <br>
+       <label class="Labels" onblur="validateEmail()">Email</label>
+       <br>
+       <input type="email" name="email" >
+       <br>
+       <label name="dob" class="Labels">DOB</label>
+       <br>
+       <input type="date">
+       <br>
+       <label name="interest" for="Selection"  class="Labels" >Select your Interest</label>
+       <br>
+       <select name="dd" class = "Selection" name="option">
+         <option value="" disabled selected hidden>-select-</option>
+         <option value="individual">Individual</option>
+         <option value="organization">Organization</option>
+       </select>
+       <br>
+      <h4 >About You</h4>
+       <textarea name="fb" name="about" rows="8" cols="80"></textarea>
+       <br>
+       <button type="submit" name="submitBtn" value="Submit" onclick="myFunction()">Send Details</button>
+          
+     </form>
+      
+  </body>
+</html>

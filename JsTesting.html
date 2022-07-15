@@ -1,0 +1,85 @@
+<html>
+<head>
+    <script>
+        function validateName() {
+          var name = document.getElementById("name").value;
+          var error = document.getElementById("errorName");
+          error.innerHTML = "";
+            
+            if (name == "") 
+              {
+               console.log("name missing");
+               error.innerHTML = "Name required";
+                }
+            else if (/\W/.test(name) === true) 
+                {
+                   console.log("no special charatcers");
+                   error.innerHTML = "Name must contain only letters";
+                } 
+            else if (/\d/.test(name) === true) 
+                {
+                   console.log("no numbers");
+                   error.innerHTML = "Name must contain only letters";
+                    } 
+            else {
+                    error.innerHTML = "✔"
+            }
+         function validateEmail() {
+          var email = document.getElementById("email").value;
+          var error = document.getElementById("errorEmail");
+          var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+          error.innerHTML = "";  
+             if (email == "") {
+               console.log("email missing");
+               error.innerHTML = "Email required";
+                 } else if (filter.test(email) === false) 
+                 {
+                   console.log("Email is invalid")
+                   error.innerHTML = "Email is invalid";
+                 } else{
+          error.innerHTML = "✔";
+                 }
+            
+                    
+        function validateForm() {
+         var name = document.getElementById("name").value;
+         var email = document.getElementById("email").value;
+         var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|
+         (([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+         if (name == "") {
+          return false;
+         } else if (/\W/.test(name) === true) {
+          return false;
+         } else if (/\d/.test(name) === true) {
+          return false;
+         } else if (email == "") {
+          return false;
+         } else if (filter.test(email) === false) {
+          return false;
+         }
+}
+    
+    </script>
+    
+</head>
+<body>
+    
+ <form action="result.html" onsubmit="return validateForm()">
+  <fieldset>
+  <legend>Signup</legend>
+   
+   Name: <input type="text" id="name" name="name" onblur="validateName()"/>
+   <span id="errorName"></span>
+   
+   Email: <input type="text" id="email" name="email" onblur="validateEmail()"/>
+   <span id="errorEmail"></span>
+
+   <input type="submit" id="submitBtn" value="Submit" />
+
+  </fieldset>
+</form>   
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,372 @@
+*{
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+header{
+    height:70px;
+    width:100%;
+    display: inline-block;
+}
+header .logo{
+    width:7%;
+    margin-left: 5%;
+    margin-top: 2px;
+    float:left;
+}
+.Navigation{
+    float:right;
+    margin-top: 35px;
+    margin-right: 7%;
+}
+.Navigation a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 200px;
+    margin: 7px;
+    display: inline-block;
+}
+.Navigation a:hover{
+    border: 1px solid black;
+}
+.Background{
+    background-image:url("banner.jpg");
+    background-repeat:no-repeat;
+    height: 250px;
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+    background-position:center;
+    border-radius: 5px;
+}
+.MyCountry{
+    font-size: 20px;
+    font-family: arial;
+    font-weight: 200px;
+    position: absolute;
+    top: 35%;
+    left: 47%;
+    transform: translate(-35%, -45%);
+}
+.Paragraph{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+.SectionThree{
+    position: relative;
+    height:200px;
+    width:97%;
+    margin-top:10px;
+    margin-left: 20px;
+    margin-right: 60px;
+}
+.HeadingText{
+    font-family: arial;
+    font-weight: 200px;
+    position: absolute;
+    top: 10%;
+    left:45%;
+}
+.Paragraph2{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+.Explore{
+    position: absolute;
+    top: 75%;
+    left: 45%;
+    text-decoration: none;
+    border-radius: 4px;
+    background-color: #c1dd29;
+    color:#fff;
+    padding: 10px 30px 10px;
+  }
+.Line{
+    width:97%;
+    margin-top:10px;
+    margin-left: 20px;
+    height: 20px;
+}
+.column{
+  float: left;
+  width: 22%;
+  margin: 10px;
+}
+.container{
+  padding: 0 20px 0;
+  margin-left: 25px;
+  align-items: center;
+  display: inline-block;
+}
+.image{
+  max-width: 100%;
+  max-height: 100%;
+}
+.container h1{
+  margin-left:45%;
+  margin-top: 10px;
+}
+.container h3{
+  margin-left:2%;
+  margin-top: 10px;
+  width: 20%;
+}
+.container p{
+  margin-left:2%;
+  margin-top: 10px;
+  width: 200px;
+}
+.box{
+    width: 200px;
+    margin: 20px;
+}
+.Block{
+  height: 450px;
+  width: 97%;
+  margin: 20px;
+}
+.SubBlock{
+  height: 420px;
+  width: 63%;
+  float:left;
+  margin: 20px;
+}
+.subimage{
+    height: 420px;
+    float: right;
+    margin: 20px;
+    width:30%;
+}
+.Image{
+  max-width: 100%;
+  max-height: 100%;
+}
+.SubBlock h4{
+  font-weight: lighter;
+  font-size: 22px;
+  margin-left: 52px;
+}
+.BoldPara{
+  font-weight:200px;
+  font-size: 45px;
+  margin: 30px;
+  margin-left: 20px;
+}
+.smallPara{
+  font-weight:30px;
+  font-size: 16px;
+  color:#94B49F;
+  margin: 30px;
+  margin-left: 20px;
+}
+.SubBlock a{
+    margin-left: 40px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    background-color: #c1dd29;
+    padding: 20px 30px 20px;    
+}
+.SubBlock a button{
+    text-decoration: none;
+}
+.QuestionBG{
+    background-image:url("qurestions-banner.jpg");
+    height: 450px;
+    background-repeat: no-repeat;
+    width: 97%;
+    position: relative;
+    background-position:center;
+    margin: 20px;
+    margin-right: 60px;
+}
+.QuestionBG h1{
+  font-size: 35px;
+  font-family: arial;
+  font-weight: 200px;
+  position: absolute;
+  top: 35%;
+  left: 40%;
+}
+.QuestionBG p{
+  font-size: 16px;
+  font-family: arial;
+  font-weight: 70px;
+  position: absolute;
+  width: 26%;
+  top: 55%;
+  left: 37%;
+}
+.QuestionBG a{
+  font-size: 14px;
+  font-family: arial;
+  font-weight: 60px;
+  position: absolute;
+  background-color: yellow;
+  top: 75%;
+  left: 45%;
+}
+.QuestionBG type=[button]{
+ text-decoration: none;
+}
+.ContractorsBlock{
+    height: 700px;
+    width: 97%;
+    margin: 20px;
+}
+.ContractorsBlock h2,p{
+    margin: 10px;
+    margin-left: 20px;
+}
+.FindYourInterestBlock{
+  height:900px;
+  width:97%;
+  margin-left: 20px;
+}
+.FindYourInterestBlock h1{
+  width:97%;
+  margin: 20px;
+}
+.FindYourInterestBlock p{
+  width:97%;
+  margin: 10px;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: lighter;
+}
+.InterestForm{
+  height:700px;
+  width:50%;
+  float: left;
+  margin-left: 20px;
+}
+  .InterestForm input[type=text], input[type=date], input[type=email],
+  input[type=select] ,input[type=checkbox], textarea :focus{
+  width: 80%;
+  padding: 20px 20px;
+  margin: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+.Selection{
+  width: 80%;
+  padding: 20px 20px;
+  margin: 8px;
+  box-sizing: border-box;
+}
+.InterestForm h4,p{
+  margin-left: 30px;
+}
+.InterestForm button{
+  margin-left: 10px;
+  margin-bottom: 20px;
+  border: 0px;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: #c1dd29;
+  color:#fff;
+  padding: 10px 30px 10px;
+}
+.Labels{
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 250;
+}
+.Imageclass{
+     height:300px;
+     width:96%;
+    text-align: center;
+    margin: 10px;
+}
+.ContactusImage{
+  height:500px;
+  width:40%;
+  text-align:left;
+  background-color:#f2f2f2;
+  margin-right:1%;
+  float: right;
+}
+.ContactusImage ol{
+  padding-left: 6%;
+}
+#contractors {
+  border-collapse: collapse;
+  width: 100%;
+}
+#contractors td, #contractors th {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 18px;
+  border-bottom: 1px solid lightgrey;
+}
+#contractors th {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: left;
+  font-weight: bolder;
+  background-color: #f2f2f2;
+}
+.TableBlock{
+  height: 600px;
+  table-layout: fixed;
+  margin: 20px;
+}
+.TableBlock h2{
+  margin: 40px;
+}
+thead th:nth-child(1) {
+  width: 10%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 30%;
+}
+
+thead th:nth-child(4) {
+  width: 10%;
+}
+thead th:nth-child(5) {
+  width: 10%;
+}
+thead th:nth-child(6) {
+  width: 10%;
+}
+.ListContent{
+  font-size: 18px;
+  font-weight: 200;
+  margin: 20px;
+  padding: 10px
+}
+.ContactSection{
+  height:200px;
+  width:97%;
+  margin-top:0; 
+  margin: 20px;
+  background-color: #eee;
+}
+.ContactSection h2{
+  margin-left: 40px;
+  padding-top: 50px;
+}
+.ContactSection p{
+  margin-left: 40px;
+}
+.ContactSection a{
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+.footer {
+  left: 0;
+  bottom: 0;
+  margin-left: 20px;
+  width: 97%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
