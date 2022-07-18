@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="utf-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width initial-scale=1.0">
+    
+       <title>Index</title>
+        
+        <script>
+      
+           function onSubmit() {
+               
+               let name = document.forms["myForm"]["name"].value;
+               let email = document.forms["myForm"]["email"].value;
+               let dob = document.forms["myForm"]["dob"].value;
+               let about = document.forms["myForm"]["about"].value;
+               
+               try{
+                   if(name=="") throw ("Name must not be blank");
+                   if(email=="") throw ("Email must not be blank");
+                   if(dob=="") throw ("Date of birth must not be blank");
+                   if(about=="") throw ("Must tell something about yourself");
+               }
+               catch(err){
+                      if(err){
+                          alert(err);
+                          return
+                      }
+                    }
+               let params = "?name" + name + "&email" +email + "&dob" + dob +"&about" + about;
+               window.open("summary.html" + params);
+           }   
+        </script>
+    </head>
+    
+  <body>
+	 <form id="myForm">
+      <label for="name">Name</label>
+         <br>
+      <input type="text" id="name" name="name">  
+        <br>
+        <label for="email">Email</label>
+         <br>
+      <input type="email" id="email" name="email">  
+        <br>
+         <label for="dob">DOB</label>
+         <br>
+      <input type="date" id="dob" name="dob">  
+        <br>
+         <label for="about">About You</label>
+         <br>
+     <textarea id="about" name="about"> </textarea>
+     </form>
+      <input type="button" id="submit" value="Submit" onclick="onSubmit()">
+  </body>
+</html>
